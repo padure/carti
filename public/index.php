@@ -4,6 +4,8 @@
     use Illuminate\Database\Capsule\Manager as Capsule;
 
     $app = AppFactory::create();
+    $app->addRoutingMiddleware();
+    $app->add(new Slim\Middleware\MethodOverrideMiddleware());
     $capsule = new Capsule;
     $capsule->addConnection(require '../config/database.php');
     $capsule->setAsGlobal();

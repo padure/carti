@@ -2,7 +2,7 @@
     return [
         'driver' => 'mysql',
         'host' => 'localhost',
-        'database' => 'papp_lectia5',
+        'database' => 'carti',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
